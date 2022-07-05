@@ -364,7 +364,9 @@ margin-left: 32px;
 
 .sec2-pic-container {
     overflow: hidden; 
-    background-color: #fff;   
+    background-color: #fff;
+    width:536px ;
+    height:373px ;   
 }
 
 .sec2-pic-container img {
