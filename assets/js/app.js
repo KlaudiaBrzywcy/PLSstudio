@@ -97,7 +97,7 @@ const shadowFrameSmallPick = (e) => {
     e.target.style.border = " 4px solid #EB8B76";
   } else if (e.target.matches(".fa-solid ")) {
     smallPictures[0].style.border = " 4px solid #EB8B76";
-    for (let i = 1; i < smallPictures.length - 1; i++) {
+    for (let i = 1; i < smallPictures.length; i++) {
       smallPictures[i].style.border = "none";
     }
   }
