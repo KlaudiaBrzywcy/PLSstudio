@@ -59,42 +59,41 @@ const toggleShadowBox = (value) => {
 const clickChecker = (e) => {
   if (e.target.matches(".sec2-btn") || e.target.matches("img")) {
     toggleShadowBox("block");
+  }
 
-    let txt = e.target.previousElementSibling || e.target;
-    const containerID = [];
-    containerID.push(e.target.parentElement.id);
+  let txt = e.target.previousElementSibling || e.target;
+  let containerID = e.target.parentElement.id;
 
-    console.log(containerID);
+  if (e.target.previousElementSibling === null) {
+    let msg = txt.alt;
+    shadowH3.textContent = msg;
+    let picture = e.target;
+    currentPicture.src = picture.src;
 
-    if (e.target.previousElementSibling === null) {
-      let msg = txt.alt;
-      shadowH3.textContent = msg;
-      let picture = e.target;
-      currentPicture.src = picture.src;
+    console.log(currentPicture.src);
+    const path = currentPicture.src.slice(0, -5);
+    console.log(path);
+    // const containerID = [];
+    // containerID.push(e.target.parentElement.id);
 
-      // const containerID = [];
-      // containerID.push(e.target.parentElement.id);
+    // console.log(...containerID);
 
-      // console.log(...containerID);
+    for (let i = 0; i < smallPictures.length; i++) {
+      smallPictures[i].src = `${path}${smallPictures[i].id}.jpg`;
+      // `assets/img/shadow-box-img-2/${smallPictures[i].id}.jpg`
+    }
+  } else {
+    let msg = txt.firstChild.nextElementSibling.textContent;
+    shadowH3.textContent = msg;
+    let picture =
+      e.target.parentElement.previousElementSibling.firstChild
+        .nextElementSibling;
+    currentPicture.src = picture.src;
 
-      for (let i = 0; i < smallPictures.length; i++) {
-        smallPictures[
-          i
-        ].src = `assets/img/${containerID[0]}/${smallPictures[i].id}.jpg`;
-      }
-    } else {
-      let msg = txt.firstChild.nextElementSibling.textContent;
-      shadowH3.textContent = msg;
-      let picture =
-        e.target.parentElement.previousElementSibling.firstChild
-          .nextElementSibling;
-      currentPicture.src = picture.src;
-
-      for (let i = 0; i < smallPictures.length; i++) {
-        smallPictures[
-          i
-        ].src = `assets/img/shadow-box-img-1/${smallPictures[i].id}.jpg`;
-      }
+    for (let i = 0; i < smallPictures.length; i++) {
+      smallPictures[
+        i
+      ].src = `assets/img/shadow-box-img-1/${smallPictures[i].id}.jpg`;
     }
   }
 };
