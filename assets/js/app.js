@@ -62,25 +62,17 @@ const clickChecker = (e) => {
   }
 
   let txt = e.target.previousElementSibling || e.target;
-  let containerID = e.target.parentElement.id;
 
   if (e.target.previousElementSibling === null) {
     let msg = txt.alt;
     shadowH3.textContent = msg;
     let picture = e.target;
     currentPicture.src = picture.src;
-
-    console.log(currentPicture.src);
+    // console.log(currentPicture.src);
     const path = currentPicture.src.slice(0, -5);
-    console.log(path);
-    // const containerID = [];
-    // containerID.push(e.target.parentElement.id);
-
-    // console.log(...containerID);
 
     for (let i = 0; i < smallPictures.length; i++) {
       smallPictures[i].src = `${path}${smallPictures[i].id}.jpg`;
-      // `assets/img/shadow-box-img-2/${smallPictures[i].id}.jpg`
     }
   } else {
     let msg = txt.firstChild.nextElementSibling.textContent;
@@ -89,26 +81,28 @@ const clickChecker = (e) => {
       e.target.parentElement.previousElementSibling.firstChild
         .nextElementSibling;
     currentPicture.src = picture.src;
+    const path = currentPicture.src.slice(0, -5);
 
     for (let i = 0; i < smallPictures.length; i++) {
-      smallPictures[
-        i
-      ].src = `assets/img/shadow-box-img-1/${smallPictures[i].id}.jpg`;
+      smallPictures[i].src = `${path}${smallPictures[i].id}.jpg`;
     }
   }
 };
 
-const shadowClickChecker = (e) => {
-  console.log("shadow");
-  console.log(e.target);
+const shadowFrameSmallPick = (e) => {
   if (e.target.matches(".small-pic")) {
-    console.log(e.target);
-    // currentPicture.src = e.target.src.replace("0.jpg", `${e.target.alt}.jpg`);
-    // smallPictures.forEach((img) => (img.style.border = "none"));
+    for (let i = 0; i < smallPictures.length; i++) {
+      smallPictures[i].style.border = "none";
+    }
     e.target.style.border = " 4px solid #EB8B76";
+  } else if (e.target.matches(".fa-solid ")) {
+    smallPictures[0].style.border = " 4px solid #EB8B76";
+    for (let i = 1; i < smallPictures.length - 1; i++) {
+      smallPictures[i].style.border = "none";
+    }
   }
 };
 
 sectionTwo.addEventListener("click", clickChecker);
 closeBox.addEventListener("click", () => toggleShadowBox("none"));
-// shadowBox.addEventListener("click", shadowClickChecker);
+shadowBox.addEventListener("click", shadowFrameSmallPick);
