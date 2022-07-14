@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLSstudio</title>
     <link rel="stylesheet" href="assets/css/modern-normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
@@ -18,22 +18,48 @@
     <div class="container">
         <!-- Navigation -->
       <nav class="navigation">
-        <div class="logo"><a href="#"><img src="assets/img/logo.png" alt="logo-dark" ></a></div>
-        <ul class="menu">
-            <li><a href="#about-us">O nas</a></li>
-            <li><a href="#realizations">Realizacje</a></li>
-            <li><a href="#offer">Oferta</a></li>
-            <li><a href="#contact">Kontakt</a></li>   
-        </ul>
-        <!-- <button class="hamburger">
-            <div class="dash"></div>
-            <div class="dash"></div>
-            <div class="dash"></div>
-        </button>    -->
-    </nav>
-    <!-- End Navigation -->
+            <div class="logo"><a href="#"><img src="assets/img/logo.png" alt="logo-dark" ></a></div>
+            <ul class="menu">
+                <li><a href="#about-us">O nas</a></li>
+                <li><a href="#realizations">Realizacje</a></li>
+                <li><a href="#offer">Oferta</a></li>
+                <li><a href="#contact">Kontakt</a></li>   
+            </ul>
+            <button class="hamburger">
+                <i class="hamburger-icon fa-solid fa-bars"></i>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </button>
+             
+      </nav>
+      <div class="hamburger-open-menu close-menu"> 
+            <div class="hamburger-items">
+                <ul class="hamburger-menu">
+                    <li><a href="#about-us">O nas</a></li>
+                    <li><a href="#realizations">Realizacje</a></li>
+                    <li><a href="#offer">Oferta</a></li>
+                    <li><a href="#contact">Kontakt</a></li>   
+                </ul>
+                <div class="social-hamburger">
+                    <a target="_blank" href="https://www.linkedin.com/in/paulina-schleser-1b7a28225/?originalSubdomain=pl"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/pls_studio/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <button class="foot-btn burger-priv">Polityka prywatności</button>
+            </div>    
+      </div>
+     <!-- End Navigation -->
 
     <main>
+        
+        <div class="home-big-circle">
+            <img  src="assets/img/SOPOT_KAMIENICA_3_03_2022 1.jpg" alt="zielona sypialnia kamienica Sopot">
+        </div>
+        <div class="home-small-circle">
+            <img src="assets/img/start small circle.jpg" alt="zielone krzesło stojące przy lustrze">
+        </div>
+    
+        <div class="olive-circle">
+            <img src="assets/img/Ellipse 25.png" alt="oliwkowe koło">
+        </div>
         <div class="home-txt-container">
             <h2 class="home-h2 ">Pozwól nam wydobyć <br> piękno Twojego wnętrza</h2>
             <p class="p-big">Projektujemy wnętrza, które uruchamiają wyobraźnię. <br> Jakość naszych projektów to suma kreatywności <br> i realizacji potrzeb oraz oczekiwań klienta.</p>
@@ -41,16 +67,7 @@
                 <button class="btn1">Poznaj naszą ofertę</button>
             </a>
         </div>
-        <div class="home-big-circle">
-            <img  src="assets/img/SOPOT_KAMIENICA_3_03_2022 1.jpg" alt="zielona sypialnia kamienica Sopot">
-        </div>
         
-        <div class="home-small-circle">
-            <img src="assets/img/start small circle.jpg" alt="zielone krzesło stojące przy lustrze">
-        </div>
-        <div class="olive-circle">
-            <img src="assets/img/Ellipse 25.png" alt="oliwkowe koło">
-        </div>
 
         <section class="section1" id="about-us">
             <div class="slider-container">
@@ -65,7 +82,7 @@
                     <button class="prev"><img src="assets/img/gallery nav left.png" alt=""></button>
                     <button class="next"> <img src="assets/img/gallery nav right.png" alt=""></button>
                 </div>
-                <div class="bread-crumbs"></div> 
+                
             
             </div>
   
@@ -93,7 +110,7 @@
                     </div>
                     
                 </div>
-                <a href="#realizations">
+                <a class="realizations-a" href="#realizations">
                 <button class="btn1 btn-realizacje">Zobacz nasze realizacje</button>
                 </a>
             </div>
@@ -104,18 +121,18 @@
             
             <p class="sec2-p">REALIZACJE</p>
             <h2>Nasze projekty mówią same za siebie</h2>
-
+            <div class="sec-2-rows">
             <div class="sec2-row1" >
                 <div class="row-item-left" >
                     <div class="sec2-pic-container" id="shadow-box-img-1">
-                        <img src="assets/img/shadow-box-img-1/0.jpg" alt="Luksusowy Apartament Lazuli w Gdańsku">
+                        <img src="assets/img/shadow-box-img-1/0.jpg" alt="Dom prywatny w Gdańsku w neutralnej tonacji">
                     </div>
                     <div class="row-item-txt">
                         
                         <div class="txt">
                             <h5>Dom prywatny w Gdańsku w neutralnej tonacji</h5>
-                            <p>Nie boimy się dużych metraży – zobacz jak <br> 
-                                poradziliśmy sobie ze stworzeniem przytulnej <br> 
+                            <p>Nie boimy się dużych metraży – zobacz jak  
+                                poradziliśmy sobie ze stworzeniem przytulnej 
                                 i pełnej światła przestrzeni.
                             </p>
                         </div>
@@ -125,14 +142,14 @@
                 </div>
                 <div class="row-item-right" >
                     <div class="sec2-pic-container" id="shadow-box-img-2">
-                        <img src="assets/img/shadow-box-img-2/0.jpg" alt="Komfortowe studio na gdańskim Garnizonie">
+                        <img src="assets/img/shadow-box-img-2/0.jpg" alt="Komfortowy apartament z nutką glamour">
                     </div>
                     <div class="row-item-txt">
                         
                         <div class="txt">
                             <h5>Komfortowy apartament z nutką glamour</h5>
-                            <p>Optymalna przestrzeń zamknięta w cztery ściany to <br>
-                                 dla nas płótno, na którym z pasją wymalujemy Ci <br>
+                            <p>Optymalna przestrzeń zamknięta w cztery ściany to 
+                                 dla nas płótno, na którym z pasją wymalujemy Ci 
                                   Twoje wymarzone miejsce do życia.
                             </p>
                         </div>
@@ -149,8 +166,8 @@
                     <div class="row-item-txt">
                         <div class="txt">
                             <h5>Salon optyczny</h5>
-                            <p>Twoje miejsce pracy powinno Ci służyć, byś mógł <br>
-                                skupić się na potrzebach klientów, a zapewnienie im <br>
+                            <p>Twoje miejsce pracy powinno Ci służyć, byś mógł 
+                                skupić się na potrzebach klientów, a zapewnienie im 
                                 pozytywnego doświadczenia zostaw nam.
                             </p>
                         </div>
@@ -164,8 +181,8 @@
                     <div class="row-item-txt">
                         <div class="txt">
                             <h5>Mieszkania na gdyńskim osiedlu Solano</h5>
-                            <p>Duża skala także nam nie straszna! 10 pięter? <br>
-                            15 budynków? Całe osiedle? <br> Poradzimy sobie z każdym wyzwaniem!</p>
+                            <p>Duża skala także nam nie straszna! 10 pięter? 
+                            15 budynków? Całe osiedle? Poradzimy sobie z każdym wyzwaniem!</p>
                         </div>
                         <button class="sec2-btn">Zobacz</button>
                     </div>
@@ -174,13 +191,13 @@
             <div class="sec2-row3">
                 <div class="row-item-left">
                     <div class="sec2-pic-container">
-                        <img src="assets/img/shadow-box-img-5/0.jpg" alt="Salon optyczny">
+                        <img src="assets/img/shadow-box-img-5/0.jpg" alt="Dom prywatny w Sopocie">
                     </div>
                     <div class="row-item-txt">
                         <div class="txt">
                             <h5>Dom prywatny w Sopocie</h5>
-                            <p>Nowoczesny design w harmonijnych <br>
-                                kolorach zieleni to przepis na ponadczasowe i piękne <br>
+                            <p>Nowoczesny design w harmonijnych 
+                                kolorach zieleni to przepis na ponadczasowe i piękne 
                                 wnętrze, które stanie się oazą spokoju.
                             </p>
                         </div>
@@ -189,20 +206,20 @@
                 </div>
                 <div class="row-item-right">
                     <div class="sec2-pic-container">
-                        <img src="assets/img/shadow-box-img-6/0.jpg" alt="Mieszkania na gdyńskim osiedlu Solano">
+                        <img src="assets/img/shadow-box-img-6/0.jpg" alt="Komfortowe studio na gdańskim Garnizonie">
                     </div>
                     <div class="row-item-txt">
                         <div class="txt">
                             <h5>Komfortowe studio na gdańskim Garnizonie</h5>
-                            <p>Optymalna przestrzeń zamknięta w cztery ściany to <br>
-                                dla nas płótno, na którym z pasją wymalujemy Ci <br>
+                            <p>Optymalna przestrzeń zamknięta w cztery ściany to 
+                                dla nas płótno, na którym z pasją wymalujemy Ci 
                                  Twoje wymarzone miejsce do życia.</p>
                         </div>
                         <button class="sec2-btn">Zobacz</button>
                     </div>
                 </div> 
             </div>
-
+            </div>
             <!-- shadow-box -->
             <div class="shadow-box">
                 <div class="gallery-container">
@@ -244,8 +261,8 @@
             <p class="offer-p">OFERTA</p>
             <h2>Nie znamy słowa ”niemożliwe”</h2>
             <p class="offer-description">
-                Wszystko da się zrobić, jeśli wie się jak. My wiemy. Bez względu na to czy szukasz <br>
-                mieszkania marzeń, chcesz wynająć apartament na Airbnb, otwierasz restaurację <br>
+                Wszystko da się zrobić, jeśli wie się jak. My wiemy. Bez względu na to czy szukasz 
+                mieszkania marzeń, chcesz wynająć apartament na Airbnb, otwierasz restaurację 
                 czy hotel – pomożemy Ci na każdym etapie realizacji Twojego projektu.
             </p>
             <div class="columns">
@@ -284,9 +301,10 @@
             </div>
             <div class="info-wrap">
             <p class="small-info"><span class="span1"><img src="assets/img/icons/info.png"></span>  <span class="span2"> Cena usługi uzależniona jest od rodzaju pakietu oraz metrażu obiektu.</span> </p> 
-            <button class="btn1">Skontaktuj się z nami</button>
+            <a href="#contact"><button class="btn1">Skontaktuj się z nami</button></a>
             </div>
         </section>
+        <img class="map-circle" src="assets/img/circle-map.png" alt="pink circle with map">
         <section class="section4"id="contact">
             <p class="contact-p">KONTAKT</p>
             <h2>Porozmawiajmy o Twojej wizji</h2>
@@ -295,35 +313,71 @@
                     <p class="tel">+48 692 888 114</p>
                     <p class="mail">kontakt@plsstudio.pl</p>
                 </div>
+                <button class="btn1 mailto">
+                    <a href="mailto:kbrzywcy@gmail.com ">Wyślij wiadomość</a>
+                </button>    
+                
                 <div class="form">
-                    <form action="" method="post">
+                    <form action="" method="POST">
                         <div class="form-row-1">
-                            <label for=""></label>
-                            <input type="text">
+                            <label for="your-contact">Zostaw numer telefonu lub adres e-mail, odezwiemy się</label>
+                            <input type="text" id="your-contact" required>
                         </div>
                         <div class="form-row-2">
-                            <label for=""></label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <label for="message">Twoja wiadomość (opcjonalnie)</label>
+                            <textarea id="message" cols="30" rows="10" placeholder="coś">
+                            </textarea>
                         </div>
                         <div class="form-row-3">
-                            <p class="info-form">Dane podane w formularzu zostaną wykorzystane wyłącznie w celu kontaktu zwrotnego <br>
-                                z Tobą. Treść korespondencji może podlegać archiwizacji. Szczegóły znajdziesz w <br>
-                                polityce prywatności</p>
-                            <button type="submit">Wyślij wiadomość</button> 
+                            <div class="info-wrap">
+                                <p class="small-info"> <span class="span3"><img src="assets/img/icons/info.png"></span> <span class="span4"> Dane podane w formularzu zostaną wykorzystane wyłącznie w celu kontaktu zwrotnego 
+                                    z Tobą. Treść korespondencji może podlegać archiwizacji. Szczegóły znajdziesz w 
+                                    polityce prywatności</span>
+                                </p> 
+                            </div>    
+                            <button class="btn1 btn-submit" type="submit">Wyślij wiadomość</button> 
                         </div>
                     </form>
                 </div>
             </div>
-
-
         </section>
-        
+        <div class="privacy-wrapper">
+            <div class="privacy">
+                <div class="top-row-priv">
+                    <h3>Polityka prywatności</h3>
+                    <p class="icon-x-priv"><i class="fa-solid fa-xmark"></i></p>
+                </div>
+                <div class="bottom-row-priv">
+                    <div class="txt-priv">
+                        
+                    </div>
 
-        
-        
+                </div>
+
+            </div>
+        </div>
+           
     </main>
-    <footer></footer>
     </div>
+    <footer class="footer">
+        <div class="logo-footer"><img src="assets/img/logo-white.png" alt="logo-light"></div>
+        <ul class="foot-ul">
+            <li><a href="#about-us">O nas</a></li>
+            <li><a href="#realizations">Realizacje</a></li>
+            <li><a href="#offer">Oferta</a></li>
+            <li><a href="#contact">Kontakt</a></li>   
+        </ul>
+        <div class="social">
+            <a target="_blank" href="https://www.linkedin.com/in/paulina-schleser-1b7a28225/?originalSubdomain=pl"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://www.instagram.com/pls_studio/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="foot-txt">
+            <button class="foot-btn">Polityka prywatności</button>
+            <p class="foot-p">Copyright 2022</p>
+        </div>
+        
+       
+    </footer>
 
     
 

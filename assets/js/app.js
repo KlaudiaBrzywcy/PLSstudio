@@ -11,6 +11,30 @@ const tnslider = tns({
   nextButton: ".next",
 });
 
+// ***hamburger***
+const hamburgerBtn = document.querySelector(".hamburger");
+const icon = document.querySelector(".hamburger-icon");
+const hamburgerOpenMenu = document.querySelector(".hamburger-open-menu");
+let navLinks = document.querySelectorAll(".hamburger-menu li a");
+
+const toggleHamburger = () => {
+  hamburgerOpenMenu.classList.toggle("close-menu");
+  hamburgerOpenMenu.classList.toggle("open-menu");
+  icon.classList.toggle("fa-bars");
+  icon.classList.toggle("fa-xmark");
+};
+
+navLinks.forEach((item) => {
+  item.addEventListener("click", () => {
+    hamburgerOpenMenu.classList.toggle("close-menu");
+    hamburgerOpenMenu.classList.toggle("open-menu");
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-xmark");
+  });
+});
+
+hamburgerBtn.addEventListener("click", toggleHamburger);
+
 // ***shadow box***
 const sectionTwo = document.querySelector(".section2");
 const sectionTwoPicture = document.querySelectorAll("sec2-pic-container img");
@@ -27,38 +51,9 @@ const toggleShadowBox = (value) => {
   shadowBox.style.display = value;
 };
 
-// let pictureProt = e.target.parentElement.previousElementSibling.firstChild;
-// let picture = pictureProt.nextElementSibling || e.target;
-// console.log(picture);
-// currentPicture.src = picture.src;
-
-// console.log(smallPictures[i].alt);
-// if (e.target === smallPictures[i]) {
-//   currentPicture.src = e.target.src;
-//   // smallPictures.forEach((img) => (img.style.border = "none"));
-//   // e.target.style.border = " 4px solid #EB8B76";
-// }
-
-// const a = () => {
-//   for (let i = 0; i < smallPictures.length; i++) {
-//     smallPictures[i].src = picture.src.replace(
-//        "0.jpg",
-//         `${smallPictures[i].alt}.jpg`
-//         );
-//       }
-// };
-
-// ||
-//       e.target.parentElement.previousElementSibling === undefined
-
-// smallPictures[i].src = currentPicture.src.replace(
-//   "0.jpg",
-//   `${smallPictures[i].alt}.jpg`
-// );
-
 const clickChecker = (e) => {
   if (e.target.matches(".sec2-btn") || e.target.matches("img")) {
-    toggleShadowBox("block");
+    toggleShadowBox("flex");
   }
 
   let txt = e.target.previousElementSibling || e.target;
@@ -106,3 +101,15 @@ const shadowFrameSmallPick = (e) => {
 sectionTwo.addEventListener("click", clickChecker);
 closeBox.addEventListener("click", () => toggleShadowBox("none"));
 shadowBox.addEventListener("click", shadowFrameSmallPick);
+
+// ***privacy***
+const privacyBtn = document.querySelector(".foot-btn");
+const privacyClose = document.querySelector(".icon-x-priv");
+const privacyContainer = document.querySelector(".privacy-wrapper");
+
+const togglePrivacy = (value) => {
+  privacyContainer.style.display = value;
+};
+
+privacyBtn.addEventListener("click", () => togglePrivacy("flex"));
+privacyClose.addEventListener("click", () => togglePrivacy("none"));
