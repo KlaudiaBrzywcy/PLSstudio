@@ -51,7 +51,7 @@
     <main>
         
         <div class="home-big-circle">
-            <img  src="assets/img/SOPOT_KAMIENICA_3_03_2022 1.jpg" alt="zielona sypialnia kamienica Sopot">
+            <img  src="assets/img/letterHomePic.png" alt="zielona sypialnia kamienica Sopot">
         </div>
         <div class="home-small-circle">
             <img src="assets/img/start small circle.jpg" alt="zielone krzesło stojące przy lustrze">
@@ -314,18 +314,19 @@
                     <p class="mail">kontakt@plsstudio.pl</p>
                 </div>
                 <button class="btn1 mailto">
-                    <a href="mailto:kbrzywcy@gmail.com ">Wyślij wiadomość</a>
+                    <a href="mailto:kontakt@plsstudio.pl ">Wyślij wiadomość</a>
                 </button>    
                 
                 <div class="form">
-                    <form action="" method="POST">
+                    <form action="https://formsubmit.co/4206a105b97f49348b0e734b0f9e635c" method="POST">
+                        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> --> 
                         <div class="form-row-1">
                             <label for="your-contact">Zostaw numer telefonu lub adres e-mail, odezwiemy się</label>
-                            <input type="text" id="your-contact" required>
+                            <input type="text" id="your-contact" required name="email">
                         </div>
                         <div class="form-row-2">
                             <label for="message">Twoja wiadomość (opcjonalnie)</label>
-                            <textarea id="message" cols="30" rows="10" placeholder="coś">
+                            <textarea id="message" cols="30" rows="10" placeholder="Twoja wiadomość" name="message">
                             </textarea>
                         </div>
                         <div class="form-row-3">
@@ -372,7 +373,7 @@
             <a target="_blank" href="https://www.instagram.com/pls_studio/"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="foot-txt">
-            <button class="foot-btn">Polityka prywatności</button>
+            <button id="open-privacy-btn" class="foot-btn">Polityka prywatności</button>
             <p class="foot-p">Copyright 2022</p>
         </div>
         

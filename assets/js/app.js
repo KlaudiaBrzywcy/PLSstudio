@@ -103,12 +103,13 @@ closeBox.addEventListener("click", () => toggleShadowBox("none"));
 shadowBox.addEventListener("click", shadowFrameSmallPick);
 
 // ***privacy***
-const privacyBtn = document.querySelector(".foot-btn");
+const privacyBtn = document.querySelector("#open-privacy-btn");
 const privacyClose = document.querySelector(".icon-x-priv");
 const privacyContainer = document.querySelector(".privacy-wrapper");
 
 const togglePrivacy = (value) => {
   privacyContainer.style.display = value;
+  console.log("click");
 };
 
 privacyBtn.addEventListener("click", () => togglePrivacy("flex"));
