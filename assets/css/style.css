@@ -1516,7 +1516,7 @@ textarea {
 /******************************** privacy politic ***************************/
 .privacy-wrapper {
     width: 100vw;
-    height: 100vh;
+    height:100%;
     z-index: 1000;
     background-color: rgba(34, 34, 34, 0.602);
     position: fixed;
@@ -1530,7 +1530,7 @@ textarea {
  display: flex;
  flex-direction: column;
  width: 70%;
- height: 60%;
+ height: 100%;
  background-color: #5C5C5C;
  padding: 20px 30px;
 }
@@ -1553,8 +1553,15 @@ textarea {
 }
 .bottom-row-priv {
     width: 100%;
-    height: 90%;
+    height: 100%;
+    overflow: auto;
     background-color: #fff;
+}
+.txt-priv {
+    padding: 20px 30px;
+}
+.txt-priv p {
+    text-align: justify;
 }
 
 
