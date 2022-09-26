@@ -3,7 +3,7 @@ VARIABLES
 ************************** */
 
 :root {
-    --mainFontFamily: 'Rubik', sans-serif;
+    --mainFontFamily:  'Frank Ruhl Libre', serif;
 
 }
 
@@ -42,7 +42,8 @@ h2 {
 }
 
 .p-big {
-    font-family: 'F37 Ginger Pro';
+    font-family: 'Frank Ruhl Libre', serif;
+    /* font-family: 'F37 Ginger Pro'; */
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -55,7 +56,8 @@ h2 {
     background-color: var(--btn1Color);
     border: none;
     color: var(--secondaryTextColor);
-    font-family: 'F37 Ginger Pro';
+    font-family: 'Frank Ruhl Libre', serif;
+    /* font-family: 'F37 Ginger Pro'; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
