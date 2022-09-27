@@ -41,6 +41,7 @@ const sectionTwoPicture = document.querySelectorAll("sec2-pic-container img");
 const sectionTwoBtn = document.getElementsByClassName(".sec2-btn");
 const shadowBox = document.querySelector(".shadow-box");
 const closeBox = document.querySelector(".icon-x");
+const topRow = document.querySelector(".top-row");
 
 const shadowH3 = document.querySelector(".shadow-h3");
 const smallPicContainer = document.querySelector(".small-pic-container");
@@ -55,31 +56,34 @@ const clickChecker = (e) => {
   if (e.target.matches(".sec2-btn") || e.target.matches("img")) {
     toggleShadowBox("flex");
   }
+  if (e.target.matches("img")) {
+    let txt = e.target.previousElementSibling || e.target;
 
-  let txt = e.target.previousElementSibling || e.target;
+    if (e.target.previousElementSibling === null) {
+      let msg = txt.alt;
+      shadowH3.textContent = msg;
+      // console.log(e.target.nodeName);
 
-  if (e.target.previousElementSibling === null) {
-    let msg = txt.alt;
-    shadowH3.textContent = msg;
-    let picture = e.target;
-    currentPicture.src = picture.src;
-    // console.log(currentPicture.src);
-    const path = currentPicture.src.slice(0, -5);
+      let picture = e.target;
+      currentPicture.src = picture.src;
 
-    for (let i = 0; i < smallPictures.length; i++) {
-      smallPictures[i].src = `${path}${smallPictures[i].id}.jpg`;
-    }
-  } else {
-    let msg = txt.firstChild.nextElementSibling.textContent;
-    shadowH3.textContent = msg;
-    let picture =
-      e.target.parentElement.previousElementSibling.firstChild
-        .nextElementSibling;
-    currentPicture.src = picture.src;
-    const path = currentPicture.src.slice(0, -5);
+      const path = currentPicture.src.slice(0, -5);
 
-    for (let i = 0; i < smallPictures.length; i++) {
-      smallPictures[i].src = `${path}${smallPictures[i].id}.jpg`;
+      for (let i = 0; i < smallPictures.length; i++) {
+        smallPictures[i].src = `${path}${smallPictures[i].id}.jpg`;
+      }
+    } else {
+      let msg = txt.firstChild.nextElementSibling.textContent;
+      shadowH3.textContent = msg;
+      let picture =
+        e.target.parentElement.previousElementSibling.firstChild
+          .nextElementSibling;
+      currentPicture.src = picture.src;
+      const path = currentPicture.src.slice(0, -5);
+
+      for (let i = 0; i < smallPictures.length; i++) {
+        smallPictures[i].src = `${path}${smallPictures[i].id}.jpg`;
+      }
     }
   }
 };
@@ -100,6 +104,7 @@ const shadowFrameSmallPick = (e) => {
 
 sectionTwo.addEventListener("click", clickChecker);
 closeBox.addEventListener("click", () => toggleShadowBox("none"));
+topRow.addEventListener("click", () => toggleShadowBox("none"));
 shadowBox.addEventListener("click", shadowFrameSmallPick);
 
 // ***privacy***
