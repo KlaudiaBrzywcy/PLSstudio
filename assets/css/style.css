@@ -481,7 +481,8 @@ z-index: -3;
 .section1-description {
 width: 598px;
 height: 116px;
-font-family: 'F37 Ginger Pro';
+font-family: 'Frank Ruhl Libre', serif;
+/* font-family: 'F37 Ginger Pro'; */
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -501,7 +502,8 @@ height: 61px;
 }
 
 .about-us-p {
-font-family: 'F37 Ginger Pro';
+    font-family: 'Frank Ruhl Libre', serif;
+/* font-family: 'F37 Ginger Pro'; */
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -526,7 +528,8 @@ color: var(--mainTextColor);
 }
 
 .numbers span {
-font-family: 'F37 Ginger Pro';
+    font-family: 'Frank Ruhl Libre', serif;
+/* font-family: 'F37 Ginger Pro'; */
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -744,7 +747,7 @@ bottom: 0%;
 }
 .sec2-p {
 margin: 0 0 6px 0;
-font-family: 'F37 Ginger Pro';
+font-family: 'Frank Ruhl Libre', serif;
 }
 
 .sec2-row1, .sec2-row2 {
@@ -792,7 +795,8 @@ margin-left: 32px;
 }
 
 .txt h5 {
-    font-family: 'F37 Ginger Pro';
+    /* font-family: 'F37 Ginger Pro'; */
+    font-family: 'Frank Ruhl Libre', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -802,7 +806,8 @@ margin-left: 32px;
 }
 
 .txt p {
-    font-family: 'F37 Ginger Pro';
+    font-family: 'Frank Ruhl Libre', serif;
+    /* font-family: 'F37 Ginger Pro'; */
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -818,7 +823,8 @@ margin-left: 32px;
     align-self: flex-start;
     margin-left: auto;
     padding: 14px 27px;
-    font-family: 'F37 Ginger Pro';
+    font-family: 'Frank Ruhl Libre', serif;
+    /* font-family: 'F37 Ginger Pro'; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1106,7 +1112,8 @@ margin-left: 32px;
 } 
 
 .offer-p {
-    font-family: 'F37 Ginger Pro';
+    font-family: 'Frank Ruhl Libre', serif;
+    /* font-family: 'F37 Ginger Pro'; */
     margin: 0 0 6px 0;
     font-style: normal;
     font-weight: 500;
@@ -1119,7 +1126,8 @@ margin-left: 32px;
     margin: 0; 
 }
 .offer-description {
-    font-family: 'F37 Ginger Pro';
+    font-family: 'Frank Ruhl Libre', serif;
+    /* font-family: 'F37 Ginger Pro'; */
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -1166,7 +1174,8 @@ margin:0;
 }
 .col-list li {
     margin-bottom: 16px;
-    font-family: 'F37 Ginger Pro';
+    font-family: 'Frank Ruhl Libre', serif;
+    /* font-family: 'F37 Ginger Pro'; */
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -1195,7 +1204,8 @@ margin:0;
 
 .info-wrap .small-info {
     color: var(--infoTxtColor);
-    font-family: 'F37 Ginger Pro';
+    font-family: 'Frank Ruhl Libre', serif;
+    /* font-family: 'F37 Ginger Pro'; */
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1355,7 +1365,8 @@ margin:0;
     z-index: -3;  
 }
 .contact-p {
-font-family: 'F37 Ginger Pro';
+/* font-family: 'F37 Ginger Pro'; */
+font-family: 'Frank Ruhl Libre', serif;
 margin: 0 0 6px 0;
 font-style: normal;
 font-weight: 500;
@@ -1376,8 +1387,9 @@ color: #222222;
     margin: 0 100px 0 0;
 }
 .contact-info p {
-    margin: 0 0 15px 0;    
-    font-family: 'F37 Ginger Pro';
+    margin: 0 0 15px 0;  
+    font-family: 'Frank Ruhl Libre', serif;  
+    /* font-family: 'F37 Ginger Pro'; */
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -1403,7 +1415,8 @@ color: #222222;
 }
 label {
     margin-bottom: 10px;
-    font-family: 'F37 Ginger Pro';
+    font-family: 'Frank Ruhl Libre', serif;
+    /* font-family: 'F37 Ginger Pro'; */
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
