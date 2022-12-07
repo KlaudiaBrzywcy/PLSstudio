@@ -119,7 +119,6 @@ const privacyContainer = document.querySelector(".privacy-wrapper");
 
 const togglePrivacy = (value) => {
   privacyContainer.style.display = value;
-  console.log("click");
 };
 
 privacyBtn.addEventListener("click", () => togglePrivacy("flex"));
