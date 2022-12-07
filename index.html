@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
     <div class="container">
         <!-- Navigation -->
       <nav class="navigation">
-            <div class="logo"><a href="#"><img src="assets/img/logo.png" alt="logo-dark" ></a></div>
+            <div class="logo"><a href="#"><img src="assets/img/logo.png" alt="logo-dark"></a></div>
             <ul class="menu">
                 <li><a href="#about-us">O nas</a></li>
                 <li><a href="#realizations">Realizacje</a></li>
@@ -53,21 +53,21 @@
     <main>
         
         <div class="home-big-circle">
-            <img  src="assets/img/letterHomePic.png" alt="zielona sypialnia kamienica Sopot">
+            <img  src="assets/img/letter-home-pic.png" alt="zielona sypialnia kamienica Sopot">
         </div>
         <div class="home-small-circle">
-            <img src="assets/img/start small circle.jpg" alt="zielone krzesło stojące przy lustrze">
+            <img src="assets/img/start-small-circle.jpg" alt="zielone krzesło stojące przy lustrze">
         </div>
     
         <div class="olive-circle">
-            <img src="assets/img/Ellipse 25.png" alt="oliwkowe koło">
+            <img src="assets/img/Ellipse-25.png" alt="oliwkowe koło">
         </div>
         <div class="home-txt-container">
             <h2 class="home-h2 ">Pozwól nam wydobyć <br> piękno Twojego wnętrza</h2>
             <p class="p-big">Projektujemy wnętrza, które uruchamiają wyobraźnię. Jakość naszych projektów to suma kreatywności i realizacji potrzeb oraz oczekiwań klienta.</p>
-            <a href="#offer">
-                <button class="btn1">Poznaj naszą ofertę</button>
-            </a>
+            <div class="btn1-a-wrapper">
+             <a class="btn1" href="#offer">Poznaj naszą ofertę</a>
+            </div>
         </div>
         
 
@@ -75,20 +75,20 @@
             <div class="slider-container">
 
                 <div class="my-slider">
-                    <img class="slide" src="assets/img/slider 2.jpg" alt="">
-                    <img class="slide" src="assets/img/slider 1.jpg" alt="">
-                    <img class="slide" src="assets/img/slider 3.jpg" alt="">       
+                    <img class="slide" src="assets/img/slider-2.jpg" alt="mdern livingroom with statement wallpaper">
+                    <img class="slide" src="assets/img/slider-1.jpg" alt="grey modern kitchen">
+                    <img class="slide" src="assets/img/slider-3.jpg" alt="pink studio apartment">       
                 </div>
 
                 <div id="controls">
-                    <button class="prev"><img src="assets/img/gallery nav left.png" alt=""></button>
-                    <button class="next"> <img src="assets/img/gallery nav right.png" alt=""></button>
+                    <button class="prev"><img src="assets/img/gallery-nav-left.png" alt="slider nav arrow left"></button>
+                    <button class="next"> <img src="assets/img/gallery-nav-right.png" alt="slider nav arrow right"></button>
                 </div>
                 
             
             </div>
   
-            <div class="pink-circle"><img src="assets/img/Ellipse 25(pink).png" alt="różowe-koło"></div>
+            <div class="pink-circle"><img src="assets/img/Ellipse-25-pink.png" alt="różowe-koło"></div>
             <div class="section1-txt">
                 <p class="about-us-p">O NAS</p>
                 <h2 class="experts-h2">Jesteśmy ekspertami <br> w swojej dziedzinie</h2>
@@ -112,13 +112,15 @@
                     </div>
                     
                 </div>
-                <a class="realizations-a" href="#realizations">
-                <button class="btn1 btn-realizacje">Zobacz nasze realizacje</button>
-                </a>
+                
+                    <div class="btn1-a-wrapper center-href-button realizations-a">
+                        <a class="btn1"  href='#realizations'> Zobacz nasze realizacje</a>
+                    </div>
+                
             </div>
         </section> 
 
-        <img class="salmon-circle" src="assets/img/Ellipse 25(salmon).png" alt="łososiowe koło">
+        <img class="salmon-circle" src="assets/img/Ellipse-25-salmon.png" alt="łososiowe koło">
         <section class="section2" id="realizations">
             
             <p class="sec2-p">REALIZACJE</p>
@@ -256,7 +258,7 @@
             </div>
                
         </section>
-        <img class="blue-circle" src="assets/img/blue elipse.png" alt="blue circle">
+        <img class="blue-circle" src="assets/img/blue-elipse.png" alt="blue circle">
         <section class="section3" id="offer"> 
             <p class="offer-p">OFERTA</p>
             <h2>Nie znamy słowa ”niemożliwe”</h2>
@@ -300,8 +302,10 @@
                 </div>
             </div>
             <div class="info-wrap">
-            <p class="small-info"><span class="span1"><img src="assets/img/icons/info.png"></span>  <span class="span2"> Cena usługi uzależniona jest od rodzaju pakietu oraz metrażu obiektu.</span> </p> 
-            <a href="#contact"><button class="btn1">Skontaktuj się z nami</button></a>
+            <p class="small-info"><span class="span1"><img src="assets/img/icons/info.png" alt="info icon"></span>  <span class="span2"> Cena usługi uzależniona jest od rodzaju pakietu oraz metrażu obiektu.</span> </p> 
+            <div class="btn1-a-wrapper">
+                <a class="btn1"  href='#contact'>Skontaktuj się z nami</a>
+            </div>
             </div>
         </section>
         <img class="map-circle" src="assets/img/circle-map.png" alt="pink circle with map">
@@ -379,13 +383,14 @@
                         <p>6.3.	Pliki cookies Administrator wykorzystuje w celu analizy sposobu użytkowania Serwisu,
                             – dla osiągnięcia tych celów nie jest wymagane zidentyfikowanie Ciebie jako Użytkownika.
                         </p>
-                        <p>6.4.	Pomimo tego, jeżeli Użytkownik nie chce by Administrator wykorzystywał pliki cookies, może samodzielnie wyłączyć ich stosowanie poprzez zmianę ustawień przeglądarki internetowej z której korzysta. Kompleksowe informacje dostępne są w ustawieniach przeglądarki internetowej. Szczegóły dla osób korzystających z poszczególnych przeglądarek internetowych można znaleźć pod podanymi niżej linkami:
-                            <li>przeglądarka Internet Explorer</li>
-                            <li>przeglądarka Mozilla Firefox</li>
-                            <li>przeglądarka Chrome</li>
-                            <li>przeglądarka Safari</li>
-                            <li>przeglądarka Opera</li>
-                         </p>
+                        <p>6.4.	Pomimo tego, jeżeli Użytkownik nie chce by Administrator wykorzystywał pliki cookies, może samodzielnie wyłączyć ich stosowanie poprzez zmianę ustawień przeglądarki internetowej z której korzysta. Kompleksowe informacje dostępne są w ustawieniach przeglądarki internetowej. Szczegóły dla osób korzystających z poszczególnych przeglądarek internetowych można znaleźć pod podanymi niżej linkami:</p>
+                            <ul>
+                                <li>przeglądarka Internet Explorer</li>
+                                <li>przeglądarka Mozilla Firefox</li>
+                                <li>przeglądarka Chrome</li>
+                                <li>przeglądarka Safari</li>
+                                <li>przeglądarka Opera</li>
+                            </ul>
                          <p>Administrator informuje, że ograniczenia bądź wyłączenia stosowania plików cookies i innych podobnych technologii mogą utrudnić korzystanie za wszystkich funkcjonalności Serwisu.</p>
                          <p>Serwis przechowuje zapytania http kierowane do serwera Administratora. Przeglądane zasoby identyfikowane są poprzez adresy url.  Szczegółowy wykaz danych przechowywanych w plikach logów serwera www obejmuje:
                             publiczny adres IP komputera z którego nadeszło zapytanie (np. komputera Użytkownika),
@@ -406,10 +411,10 @@
                             <h5>7. Okres przechowywania danych osobowych.</h5>
                             <p>W zakresie danych osobowych pozyskanych za pośrednictwem formularza kontaktowego, dane te Administrator będzie przechowywał przez okres niezbędny do udzielenia odpowiedzi, nie dłużej jednak niż przez okres 6 miesięcy, lub w przypadku nawiązania korespondencji – na czas jej trwania</p>
                             <h5>8.	Prawa związane z przetwarzaniem danych osobowych.</h5>
-                            <p>
+                            <ul>
                                 <li>Użytkownik w każdej chwili ma prawo dostępu do swoich danych. Ponadto, może żądać sprostowania, usunięcia, a także ograniczenia przetwarzania danych osobowych.</li>
                                 <li>Użytkownikowi przysługuje także prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych, jeżeli uważa, że przetwarzanie danych osobowych narusza przepisy prawa.</li> 
-                            </p>
+                            </ul>
                             <h5>9. Sprzeciw wobec przetwarzania danych osobowych.</h5>
                             <p>W przypadku gdy Administrator przetwarza dane osobowe Użytkownika na podstawie prawnie uzasadnionego interesu, Użytkownikowi przysługuje prawo do wniesienia sprzeciwu wobec przetwarzania danych osobowych – z przyczyn związanych ze szczególną sytuacją.</p>
                             <h5>10.	Podejmowanie decyzji w sposób zautomatyzowany oraz profilowanie.</h5>
@@ -417,11 +422,11 @@
                             <h5>11.	Przekazywanie danych osobowych do państwa trzeciego oraz organizacji międzynarodowych.</h5>
                             <p>Administrator nie będzie przekazywał danych osobowych Użytkowników do państw położonych poza Europejskim Obszarem Gospodarczym (państwa trzecie), ani do organizacji międzynarodowych.</p>
                             <h5>12.	Postanowienia końcowe.</h5>
-                            <p>
+                            <ul>
                                 <li>Serwis może zawierać odnośniki do innych stron www lub wtyczki mediów społecznościowych. Administrator nie ponosi odpowiedzialności za oprogramowanie, usługi, produkty, treści lub zasady zachowania prywatności, w tym przetwarzania danych osobowych, obowiązujące na tych stronach lub w mediach społecznościowych. Administrator rekomenduje, aby po przejściu na inne strony www, Użytkownik zapoznał się z obowiązującą tam polityką prywatności.</li>
                                 <li>Administrator zastrzega sobie prawo do zmiany Polityki prywatności.</li>
                                 <li>Określone w Polityce zasady zostały sporządzone i są zgodne z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 roku w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE oraz ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych.</li>
-                            </p>
+                            </ul>
                     </div> 
 
                 </div>

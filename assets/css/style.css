@@ -49,6 +49,7 @@ h2 {
     font-size: 20px;
     line-height: 145%;
     color: var(--mainTextColor);
+   
 }
 
 .btn1 {
@@ -64,7 +65,17 @@ h2 {
     line-height: 145%;
     transition: background-color 500ms ease-out;
     cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
 }
+
+.btn1-a-wrapper{
+    margin-top: 50px;
+}
+
+/* .centred {
+    align-self: center;
+} */
 
 .btn1:hover {
     background-color: var(--primaryColor);
@@ -475,7 +486,9 @@ z-index: -3;
 
 .section1-txt {
     margin-left: 73px;
-    margin-top: 37px;    
+    margin-top: 37px;  
+    display: flex;
+    flex-direction: column;   
 }
 
 .section1-description {
@@ -491,11 +504,11 @@ margin: 0 0 20px 0;
 color: var(--mainTextColor);
 }
 
-.btn-realizacje {
-margin-top: 34px;
-width: 238px;
-height: 61px;
-} 
+.center-href-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .experts-h2{
     margin-bottom: 16px;
@@ -1577,6 +1590,10 @@ textarea {
 }
 .txt-priv p {
     text-align: justify;
+}
+
+.privacy-wrapper ul li {
+text-align: justify;
 }
 
 
