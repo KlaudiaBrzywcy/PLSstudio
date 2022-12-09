@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 /* *********************************************
 VARIABLES
 ************************** */
@@ -1230,6 +1234,12 @@ margin:0;
 .span1 {
     display: flex;
     align-items: center;
+}
+.icon-i {
+    background: url(../img/icons/info.png);
+    height: 24px;
+    width: 24px;
+    display: block;
 }
 .span2 {
     margin-left: 10px;

@@ -38,7 +38,7 @@ hamburgerBtn.addEventListener("click", toggleHamburger);
 // ***shadow box***
 const sectionTwo = document.querySelector(".section2");
 const sectionTwoPicture = document.querySelectorAll("sec2-pic-container img");
-const sectionTwoBtn = document.getElementsByClassName(".sec2-btn");
+// const sectionTwoBtn = document.getElementsByClassName(".sec2-btn");
 const shadowBox = document.querySelector(".shadow-box");
 const closeBox = document.querySelector(".icon-x");
 const topRow = document.querySelector(".top-row");
@@ -59,7 +59,7 @@ const clickChecker = (e) => {
   if (e.target.matches(".sec2-btn") || e.target.matches("img")) {
     toggleShadowBox("flex");
   }
-  console.log(e.target);
+  // console.log(e.target);
   let txt = e.target.previousElementSibling || e.target;
 
   if (e.target.previousElementSibling === null) {
@@ -97,7 +97,8 @@ const shadowFrameSmallPick = (e) => {
     e.target.style.border = " 4px solid #EB8B76";
   } else if (
     e.target.matches(".fa-solid ") ||
-    e.target.matches(".shadow-box")
+    e.target.matches(".shadow-box") ||
+    e.target.matches(".top-row")
   ) {
     smallPictures[0].style.border = " 4px solid #EB8B76";
     for (let i = 1; i < smallPictures.length; i++) {
