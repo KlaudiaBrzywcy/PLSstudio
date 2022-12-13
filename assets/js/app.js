@@ -38,7 +38,6 @@ hamburgerBtn.addEventListener("click", toggleHamburger);
 // ***shadow box***
 const sectionTwo = document.querySelector(".section2");
 const sectionTwoPicture = document.querySelectorAll("sec2-pic-container img");
-// const sectionTwoBtn = document.getElementsByClassName(".sec2-btn");
 const shadowBox = document.querySelector(".shadow-box");
 const closeBox = document.querySelector(".icon-x");
 const topRow = document.querySelector(".top-row");
@@ -59,7 +58,6 @@ const clickChecker = (e) => {
   if (e.target.matches(".sec2-btn") || e.target.matches("img")) {
     toggleShadowBox("flex");
   }
-  // console.log(e.target);
   let txt = e.target.previousElementSibling || e.target;
 
   if (e.target.previousElementSibling === null) {
