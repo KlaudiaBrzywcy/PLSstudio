@@ -36,26 +36,28 @@ navLinks.forEach((item) => {
 hamburgerBtn.addEventListener("click", toggleHamburger);
 
 // ***shadow box***
-const sectionTwo = document.querySelector(".section2");
-const sectionTwoPicture = document.querySelectorAll("sec2-pic-container img");
-const shadowBox = document.querySelector(".shadow-box");
-const closeBox = document.querySelector(".icon-x");
-const topRow = document.querySelector(".top-row");
+const sectionTwo = document.querySelector(".section2-js");
+const sectionTwoPicture = document.querySelectorAll(
+  "sec2-pic-container-js img"
+);
+const shadowBox = document.querySelector(".shadow-box-js");
+const closeBox = document.querySelector(".icon-x-js");
+const topRow = document.querySelector(".top-row-js");
 const smallGalleryContainer = document.querySelector(
-  ".small-gallery-conatiner"
+  ".small-gallery-conatiner-js"
 );
 
-const shadowH3 = document.querySelector(".shadow-h3");
-const smallPicContainer = document.querySelector(".small-pic-container");
+const shadowH3 = document.querySelector(".shadow-h3-js");
+const smallPicContainer = document.querySelector(".small-pic-container-js");
 const currentPicture = document.querySelector("#current");
-const smallPictures = document.getElementsByClassName("small-pic");
+const smallPictures = document.getElementsByClassName("small-pic-js");
 
 const toggleShadowBox = (value) => {
   shadowBox.style.display = value;
 };
 
 const clickChecker = (e) => {
-  if (e.target.matches(".sec2-btn") || e.target.matches("img")) {
+  if (e.target.matches(".sec2-btn-js") || e.target.matches("img")) {
     toggleShadowBox("flex");
   }
   let txt = e.target.previousElementSibling || e.target;
@@ -88,15 +90,15 @@ const clickChecker = (e) => {
 };
 
 const shadowFrameSmallPick = (e) => {
-  if (e.target.matches(".small-pic")) {
+  if (e.target.matches(".small-pic-js")) {
     for (let i = 0; i < smallPictures.length; i++) {
       smallPictures[i].style.border = "none";
     }
     e.target.style.border = " 4px solid #EB8B76";
   } else if (
     e.target.matches(".fa-solid ") ||
-    e.target.matches(".shadow-box") ||
-    e.target.matches(".top-row")
+    e.target.matches(".shadow-box-js") ||
+    e.target.matches(".top-row-js")
   ) {
     smallPictures[0].style.border = " 4px solid #EB8B76";
     for (let i = 1; i < smallPictures.length; i++) {
