@@ -45,6 +45,7 @@ h1, h3 {
     margin-top: 8px; 
 }
 
+
 .p-big {
     font-family: 'Frank Ruhl Libre', serif;
     /* font-family: 'F37 Ginger Pro'; */
@@ -72,13 +73,13 @@ h1, h3 {
     margin-top: 20px;
 }
 
+.btn-primary:focus{
+    border: 3px solid #EB8B76    ;
+}
+
 .btn-primary-a-wrapper{
     margin-top: 50px;
 }
-
-/* .centred {
-    align-self: center;
-} */
 
 .btn-primary:hover {
     background-color: var(--primaryColor);
@@ -588,6 +589,9 @@ margin: 0;
     }
     .btn-realizacje{
         align-self: center;
+    }
+    .btn-realizacje:focus {
+        border: 3px solid #222222;
     }
 }
 @media (max-width:716px){
